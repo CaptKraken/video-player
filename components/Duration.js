@@ -8,7 +8,7 @@ export default function Duration({ className, seconds }) {
   );
 }
 
-function format(seconds) {
+export function format(seconds) {
   const date = new Date(seconds * 1000);
   const hh = date.getUTCHours();
   const mm = pad(date.getUTCMinutes());
